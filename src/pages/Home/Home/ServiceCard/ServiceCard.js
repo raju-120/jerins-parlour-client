@@ -22,7 +22,7 @@ const ServiceCard = () => {
             price: 99
           },
           {
-            _id: 3,
+            id: 3,
             name: 'Skin Care Treatment',
             icon: Skin,
             description: "Amazing flyers, social media posts and brand representations that would make your brand stand out.",

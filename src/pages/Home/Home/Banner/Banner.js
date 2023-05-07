@@ -6,7 +6,7 @@ const Banner = () => {
         <div>
             <div className="hero min-h-screen bg-base-200 rounded-lg">
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    <img src={banner} alt='' className="max-w-lg rounded-lg shadow-2xl" />
+                    <img src={banner} alt='' className="lg:max-w-lg rounded-lg shadow-2xl" />
                     <div>
                         <h1 className="text-5xl font-bold">BEAUTY SALON <br /> FOR EVERY WOMEN</h1>
                         <p className="py-6">
