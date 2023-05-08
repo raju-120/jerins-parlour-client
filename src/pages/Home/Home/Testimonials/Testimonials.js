@@ -1,9 +1,8 @@
 import React from 'react';
-import { FaStar } from 'react-icons/fa';
 import img1 from '../../../../assets/images/Ellipse 90.png';
 import img2 from '../../../../assets/images/Ellipse 91.png';
 import img3 from '../../../../assets/images/Ellipse 92.png';
-import TestimonialCard from '../TestimonialCard';
+import TestimonialCard from './TestimonialCard';
 
 const Testimonials = () => {
     const testisData=[
@@ -37,7 +36,7 @@ const Testimonials = () => {
             <h2 className='mt-16 text-3xl font-bold text-center'>Testimonials</h2>
             <div className='mt-16 grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                 {
-                    testisData.map(test =><TestimonialCard 
+                    testisData.map(test =><TestimonialCard
                     key={test.id}
                     test={test}
                     >
