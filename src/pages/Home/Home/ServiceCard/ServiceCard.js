@@ -3,6 +3,7 @@ import Anti from '../../../../assets/icons/Group 1373.png';
 import Hair from '../../../../assets/icons/Group 1372.png';
 import Skin from '../../../../assets/icons/Group 1374.png';
 import InfoCard from './InfoCard';
+import { Link } from 'react-router-dom';
 
 
 const ServiceCard = () => {
@@ -43,7 +44,7 @@ const ServiceCard = () => {
                 }
             </div>
             <div className="mt-8 card-actions justify-center">
-                <button className="btn btn-primary">Explore More</button>
+                <Link to='/appointment' className="btn btn-primary">Explore More</Link>
             </div>
         </div>
     );
