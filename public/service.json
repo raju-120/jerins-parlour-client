@@ -1,47 +1,92 @@
 [
-    {
-      "_id": 1,
-      "name": "Anti Age Face Treatment",
-      "photo":"https://i.ibb.co/7VNyWDc/Group-1373.png",
-      "description":"We craft stunning and amazing web UI, using a well drrafted UX to fit your product.",
-      "price" : "199",
-      "slots": [
-        "12.00 PM - 1.30 PM",
-        "01.35 PM - 03.05 PM",
-        "03.10 PM - 04.40 PM",
-        "04.45 PM - 06.15 PM",
-        "06.20 PM - 08.50 PM",
-        "08.55 PM - 10.25 PM"
-      ]
-    },
-    {
-      "_id": 2,
-      "name": "Hair Color & Styleing",
-      "photo":"https://i.ibb.co/N1gMMsT/Group-1372.png",
-      "description":"Amazing flyers, social media posts and brand representations that would make your brand stand out.",
-      "price" : "99",
-      "slots": [
-        "12.00 PM - 1.30 PM",
-        "01.35 PM - 03.05 PM",
-        "03.10 PM - 04.40 PM",
-        "04.45 PM - 06.15 PM",
-        "06.20 PM - 08.50 PM",
-        "08.55 PM - 10.25 PM"
-      ]
-    },
-    {
-      "_id": 3,
-      "name": "Skin Care Treatment",
-      "photo":"https://i.ibb.co/YdcxnBd/Group-1374.png",
-      "description":"Amazing flyers, social media posts and brand representations that would make your brand stand out.",
-      "price" : "299",
-      "slots": [
-        "12.00 PM - 1.30 PM",
-        "01.35 PM - 03.05 PM",
-        "03.10 PM - 04.40 PM",
-        "04.45 PM - 06.15 PM",
-        "06.20 PM - 08.50 PM",
-        "08.55 PM - 10.25 PM"
-      ]
-    }
-  ]
+  {
+    "_id": 1,
+    "name": "Anti Age Face Treatment",
+    "photo":"https://i.ibb.co/7VNyWDc/Group-1373.png",
+    "description":"We craft stunning and amazing web UI, using a well drrafted UX to fit your product.",
+    "price" : "199",
+    "slots": [
+      "12.00 PM - 1.30 PM",
+      "01.35 PM - 03.05 PM",
+      "03.10 PM - 04.40 PM",
+      "04.45 PM - 06.15 PM",
+      "06.20 PM - 08.50 PM",
+      "08.55 PM - 10.25 PM"
+    ]
+  },
+  {
+    "_id": 2,
+    "name": "Hair Color & Styleing",
+    "photo":"https://i.ibb.co/N1gMMsT/Group-1372.png",
+    "description":"Amazing flyers, social media posts and brand representations that would make your brand stand out.",
+    "price" : "99",
+    "slots": [
+      "12.00 PM - 1.30 PM",
+      "01.35 PM - 03.05 PM",
+      "03.10 PM - 04.40 PM",
+      "04.45 PM - 06.15 PM",
+      "06.20 PM - 08.50 PM",
+      "08.55 PM - 10.25 PM"
+    ]
+  },
+  {
+    "_id": 3,
+    "name": "Skin Care Treatment",
+    "photo":"https://i.ibb.co/YdcxnBd/Group-1374.png",
+    "description":"Amazing flyers, social media posts and brand representations that would make your brand stand out.",
+    "price" : "299",
+    "slots": [
+      "12.00 PM - 1.30 PM",
+      "01.35 PM - 03.05 PM",
+      "03.10 PM - 04.40 PM",
+      "04.45 PM - 06.15 PM",
+      "06.20 PM - 08.50 PM",
+      "08.55 PM - 10.25 PM"
+    ]
+  },
+  {
+    "_id": 4,
+    "name": "Hair Cut",
+    "photo":"https://i.ibb.co/VVpyfKk/hair-cut.jpg",
+    "description":"Amazing flyers, social media posts and brand representations that would make your brand stand out.",
+    "price" : "150",
+    "slots": [
+      "12.00 PM - 1.30 PM",
+      "01.35 PM - 03.05 PM",
+      "03.10 PM - 04.40 PM",
+      "04.45 PM - 06.15 PM",
+      "06.20 PM - 08.50 PM",
+      "08.55 PM - 10.25 PM"
+    ]
+  },
+  {
+    "_id": 5,
+    "name": "Pedicure & Manicure",
+    "photo":"https://i.ibb.co/NTtqWQR/pedicure.jpg",
+    "description":"Amazing flyers, social media posts and brand representations that would make your brand stand out.",
+    "price" : "150",
+    "slots": [
+      "12.00 PM - 1.30 PM",
+      "01.35 PM - 03.05 PM",
+      "03.10 PM - 04.40 PM",
+      "04.45 PM - 06.15 PM",
+      "06.20 PM - 08.50 PM",
+      "08.55 PM - 10.25 PM"
+    ]
+  },
+  {
+    "_id": 6,
+    "name": "Spa & Relaxation",
+    "photo":"https://i.ibb.co/nwCgvSJ/spa.png",
+    "description":"Amazing flyers, social media posts and brand representations that would make your brand stand out.",
+    "price" : "150",
+    "slots": [
+      "12.00 PM - 1.30 PM",
+      "01.35 PM - 03.05 PM",
+      "03.10 PM - 04.40 PM",
+      "04.45 PM - 06.15 PM",
+      "06.20 PM - 08.50 PM",
+      "08.55 PM - 10.25 PM"
+    ]
+  }
+]

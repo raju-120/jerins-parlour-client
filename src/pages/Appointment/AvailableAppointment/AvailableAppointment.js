@@ -1,17 +1,28 @@
 import { format } from 'date-fns';
-import React, { useEffect, useState } from 'react';
+import React, {  useEffect, useState } from 'react';
 import AppointmentOption from './AppointmentOption';
 import BookingModal from '../BookingModal/BookingModal';
+//import { useQuery } from 'react-query';
 
 const AvailableAppointment = ({selectedDate}) => {
     const [appointmentServices,setAppointmentServices] = useState([]);
     const [treatment, setTreatment] = useState(null);
 
+    /* const {data:appointmentServices=[]} = useQuery({
+        queryKey: ['appointmentOption'],
+        queryFn: () => fetch('http://localhost:5000/appointmentOption')
+                        .then(res => res.json())
+    }) */
+
     useEffect(()=>{
         fetch('service.json')
-        .then(res => res.json())
-        .then(data=> setAppointmentServices(data))
+            .then(res => res.json())
+            .then(data => {
+                setAppointmentServices(data);
+            })
     },[])
+
+    
     return (
         <section className='mt-16'>
             <p className='text-center text-2xl font-bold text-info'>Available Appointment {format(selectedDate, 'PP')}</p>

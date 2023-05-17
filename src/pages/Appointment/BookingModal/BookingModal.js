@@ -1,9 +1,10 @@
 import { format } from 'date-fns';
 import React from 'react';
 
-const BookingModal = ({treatment,selectedDate,setTreatment}) => {
+const BookingModal = ({ treatment,selectedDate,setTreatment }) => {
+    //treatment is just another name of appointmentOptions with name,slots,_id
     const {name:treatmentName, slots } = treatment;
-    const date = format(selectedDate, 'PP');
+    const date = format(selectedDate,'PP');
 
     const handleBooking = event =>{
         event.preventDefault();
@@ -36,7 +37,7 @@ const BookingModal = ({treatment,selectedDate,setTreatment}) => {
                     <h3 className="text-lg font-bold">{treatmentName}</h3>
                     
                     <form onSubmit={handleBooking} className='grid grid-cols-1 gap-3 mt-10'> 
-                        <input type="text" defaultValue={date} className="input input-bordered w-full " />
+                        <input type="text" disabled value={date} className="input input-bordered w-full " />
                         
                         <select name='slot' className="select select-bordered w-full">
                             <option>Select appointment slots?</option>

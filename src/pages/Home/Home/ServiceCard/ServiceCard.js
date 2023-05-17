@@ -33,7 +33,7 @@ const ServiceCard = () => {
     return (
         <div className='mt-28'>
             <h1 className='text-3xl font-bold text-center '>Our Awesome <span className='text-primary'>Services</span></h1>
-            <div className='mt-16 grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+            <div className='lg:ml-12 mt-16 grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
                 {
                     cardsData.map(card=> <InfoCard
                     key={card.id}

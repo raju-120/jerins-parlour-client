@@ -1,11 +1,13 @@
 import React from 'react';
 
-const AppointmentOption = ({option,setTreatment}) => {
-    const {name, photo, description,slots, price} = option;
+const AppointmentOption = ({ option,setTreatment }) => {
+
+    const {name, photo, description, slots, price} = option;
+    
     return (
-        <div className="card bg-base-100 shadow-xl">
+        <div className="card bg-base-100 shadow-xl" style={{height: '40em'}}>
             <figure className="px-10 pt-10">
-                <img src={photo} alt="photos" className="rounded-xl" />
+                <img src={photo} alt="photos" className=" rounded-xl" />
             </figure>
             <div className="card-body items-center text-center">
                 <h2 className="card-title text-xl">{name}</h2>
@@ -16,6 +18,7 @@ const AppointmentOption = ({option,setTreatment}) => {
                 
                 <div className="card-actions justify-center">
                    <label 
+                        disabled={slots.length === 0}
                         htmlFor="booking-modal" 
                         className="btn btn-primary"
                         onClick={() =>setTreatment(option)}

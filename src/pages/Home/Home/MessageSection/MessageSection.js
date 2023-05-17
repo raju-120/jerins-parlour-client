@@ -12,23 +12,22 @@ const MessageSection = () => {
                             <div className='lg:flex justify-between'>
                                 
                                 <div className="form-control">
-                                    <input type="text" placeholder="First Name" className="mt-5 input input-bordered" />
+                                    <input type="text" placeholder="First Name" className="lg:-ml-5 mt-5 input input-bordered" />
                                 </div>
                                 <div className="form-control ">
-                                    <input type="text" placeholder="Last Name" className="mt-5 input input-bordered" />
+                                    <input type="text" placeholder="Last Name" className="lg:ml-5 mt-5 input input-bordered" />
                                 </div>
                             </div>
                             <div className='lg:flex justify-between'>
                                 
                                 <div className="form-control">
-                                    <input type="text" placeholder="Email Address" className="mt-5 input input-bordered" />
+                                    <input type="text" placeholder="Email Address" className="lg:-ml-5 mt-5 input input-bordered" />
                                 </div>
                                 <div className="form-control ">
-                                    <input type="text" placeholder="Phone Number" className="mt-5 input input-bordered" />
+                                    <input type="text" placeholder="Phone Number" className="lg:ml-5 mt-5 input input-bordered" />
                                 </div>
                             </div>
                             <textarea placeholder="Your Message" className="mt-5 textarea textarea-bordered textarea-xl w-full" ></textarea>
-                            
                             
                             
                             <div className="form-control mt-6">
