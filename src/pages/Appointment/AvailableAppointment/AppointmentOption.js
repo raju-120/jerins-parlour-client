@@ -4,6 +4,7 @@ const AppointmentOption = ({ option,setTreatment }) => {
 
     const {name, photo, description, slots, price} = option;
     
+    
     return (
         <div className="card bg-base-100 shadow-xl" style={{height: '40em'}}>
             <figure className="px-10 pt-10">
