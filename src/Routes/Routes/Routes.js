@@ -4,11 +4,13 @@ import Home from "../../pages/Home/Home/Home";
 import Login from "../../pages/Login/Login";
 import Appointment from "../../pages/Appointment/Appointment/Appointment";
 import SignUp from "../../pages/SignUp/SignUp";
-import DashBoard from "../../pages/DashBoard/DashBoard";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import DashboardLayout from "../../Layout/DashboardLayout/DashboardLayout";
 import MyAppointment from "../../pages/DashBoard/MyAppointment/MyAppointment";
 import AllUsers from "../../pages/DashBoard/AllUsers/AllUsers";
+import AdminRoute from "../AdminRoute/AdminRoute";
+import AddEmployee from "../../pages/DashBoard/AddEmployee/AddEmployee";
+import ManageEmployees from "../../pages/DashBoard/ManageEmployees/ManageEmployees";
 
 
 const router = createBrowserRouter([
@@ -45,7 +47,15 @@ const router = createBrowserRouter([
             },
             {
                 path: '/dashboard/allusers',
-                element: <AllUsers></AllUsers>
+                element: <AdminRoute><AllUsers></AllUsers></AdminRoute>
+            },
+            {
+                path: '/dashboard/addemployee',
+                element: <AdminRoute> <AddEmployee></AddEmployee> </AdminRoute>
+            },
+            {
+                path: '/dashboard/manageemployee',
+                element: <AdminRoute> <ManageEmployees></ManageEmployees> </AdminRoute>
             }
         ]
     }

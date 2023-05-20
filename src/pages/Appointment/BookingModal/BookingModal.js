@@ -65,7 +65,7 @@ const BookingModal = ({ treatment,selectedDate,setTreatment, refetch}) => {
                         <select name='slot' className="select select-bordered w-full">
                             <option>Select appointment slots?</option>
                             {
-                                slots.map((slot,i) => <option 
+                                slots?.map((slot,i) => <option 
                                 value={slot}
                                 key={i} 
                                 >{slot}</option>)
