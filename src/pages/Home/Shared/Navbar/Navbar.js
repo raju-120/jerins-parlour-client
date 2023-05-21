@@ -7,11 +7,11 @@ const Navbar = () => {
 
     const {user,logOut} = useContext(AuthContext)
 
-    const handleSignOut = event =>{
-        event.preventDefault();
+    const handleSignOut = () =>{
+        
         logOut()
-        .then()
-        .catch()
+            .then()
+            .catch()
     }
 
     const menuItems= <React.Fragment>

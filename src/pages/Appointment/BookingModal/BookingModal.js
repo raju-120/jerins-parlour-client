@@ -7,7 +7,7 @@ const BookingModal = ({ treatment,selectedDate,setTreatment, refetch}) => {
 
 
     //treatment is just another name of appointmentOptions with name,slots,_id
-    const {name:treatmentName, slots } = treatment;
+    const {name:treatmentName, slots,price } = treatment;
     const date = format(selectedDate,'PP');
     const {user} = useContext(AuthContext);
 
@@ -27,7 +27,8 @@ const BookingModal = ({ treatment,selectedDate,setTreatment, refetch}) => {
             user:name,
             slot,
             email,
-            phone
+            phone,
+            price
 
         }
         fetch('http://localhost:5000/bookings', {
@@ -63,7 +64,7 @@ const BookingModal = ({ treatment,selectedDate,setTreatment, refetch}) => {
                         <input type="text" disabled value={date} className="input input-bordered w-full " />
                         
                         <select name='slot' className="select select-bordered w-full">
-                            <option>Select appointment slots?</option>
+                            
                             {
                                 slots?.map((slot,i) => <option 
                                 value={slot}

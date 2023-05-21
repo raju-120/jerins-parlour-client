@@ -11,12 +11,15 @@ import AllUsers from "../../pages/DashBoard/AllUsers/AllUsers";
 import AdminRoute from "../AdminRoute/AdminRoute";
 import AddEmployee from "../../pages/DashBoard/AddEmployee/AddEmployee";
 import ManageEmployees from "../../pages/DashBoard/ManageEmployees/ManageEmployees";
+import Payment from "../../pages/DashBoard/Payment/Payment";
+import DisplayError from "../../pages/Home/Shared/DisplayError/DisplayError";
 
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
+        errorElement: <DisplayError></DisplayError>,
         children:[
             {
                 path: '/',
@@ -40,6 +43,7 @@ const router = createBrowserRouter([
     {
         path:'/dashboard',
         element: <PrivateRoute> <DashboardLayout></DashboardLayout> </PrivateRoute>,
+        errorElement: <DisplayError></DisplayError>,
         children: [
             {
                 path: '/dashboard',
@@ -56,6 +60,11 @@ const router = createBrowserRouter([
             {
                 path: '/dashboard/manageemployee',
                 element: <AdminRoute> <ManageEmployees></ManageEmployees> </AdminRoute>
+            },
+            {
+                path: '/dashboard/payment/:id',
+                element: <AdminRoute> <Payment></Payment> </AdminRoute>,
+                loader: ({params}) => fetch(`http://localhost:5000/bookings/${params.id}`)
             }
         ]
     }
