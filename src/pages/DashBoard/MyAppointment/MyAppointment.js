@@ -2,12 +2,14 @@ import React, { useContext } from 'react';
 import { AuthContext } from '../../../Context/AuthProvider';
 import { useQuery } from 'react-query';
 import { Link } from 'react-router-dom';
+import useTitle from '../../../hooks/useTitle';
 
 const MyAppointment = () => {
 
+    useTitle('My Appointment')
     const {user} = useContext(AuthContext);
 
-    const url = `http://localhost:5000/bookings?email=${user?.email}` ;
+    const url = `https://jerins-parlour-server-eta.vercel.app/bookings?email=${user?.email}` ;
 
     const { data: bookings =[] } = useQuery({
         queryKey: ['bookings', user?.email],

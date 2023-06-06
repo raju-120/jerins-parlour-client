@@ -4,9 +4,11 @@ import { useQuery } from 'react-query';
 import Loading from '../../Home/Shared/Loading/Loading';
 import { toast } from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
+import useTitle from '../../../hooks/useTitle';
 
 const AddEmployee = () => {
     
+    useTitle('AddEmployees');
     const {register, formState: {errors}, handleSubmit} = useForm();
     const imageHostKey = process.env.REACT_APP_imgbb_Key;
 
@@ -17,7 +19,7 @@ const AddEmployee = () => {
     const {data: specialties, isLoading} = useQuery({
         queryKey: ['specialty'],
         queryFn: async () =>{
-            const res = await fetch('http://localhost:5000/appointmentSpecialty')
+            const res = await fetch('https://jerins-parlour-server-eta.vercel.app/appointmentSpecialty')
             const data = await res.json();
             return data;
         }
@@ -45,7 +47,7 @@ const AddEmployee = () => {
                 } 
 
                 //save employee information to the database
-                fetch('http://localhost:5000/employees',{
+                fetch('https://jerins-parlour-server-eta.vercel.app/employees',{
                     method: 'POST',
                     headers: {
                         'content-type' : 'application/json',

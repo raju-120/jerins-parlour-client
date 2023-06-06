@@ -3,9 +3,11 @@ import { useQuery } from 'react-query';
 import Loading from '../../Home/Shared/Loading/Loading';
 import ConfirmationModal from '../../Home/Shared/ConfirmationModal/ConfirmationModal';
 import { toast } from 'react-hot-toast';
+import useTitle from '../../../hooks/useTitle';
 
 const ManageEmployees = () => {
 
+    useTitle('Manage Employees');
     const [deletingEmployee,setDeletingEmployee] = useState(null);
 
     const closeModal = () =>{
@@ -16,7 +18,7 @@ const ManageEmployees = () => {
     const {data: employees =[], isLoading, refetch} = useQuery({
         queryKey: ['employees'],
         queryFn: async() =>{
-            const res = await fetch('http://localhost:5000/employees')
+            const res = await fetch('https://jerins-parlour-server-eta.vercel.app/employees')
             const data = await res.json();
             return data;
         }
@@ -25,7 +27,7 @@ const ManageEmployees = () => {
     
     const handleDeleteEmployee = employee =>{
         console.log(employee);
-        fetch(`http://localhost:5000/employees/${employee._id}`, {
+        fetch(`https://jerins-parlour-server-eta.vercel.app/employees/${employee._id}`, {
             method: 'DELETE',
             headers: {
                 authorization: `bearer ${localStorage.getItem('accessToken')}`

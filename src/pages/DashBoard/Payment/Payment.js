@@ -4,6 +4,7 @@ import { useLoaderData, useNavigation } from 'react-router-dom';
 import { Elements } from '@stripe/react-stripe-js';
 import CheckOutForm from './CheckOutForm';
 import Loading from '../../Home/Shared/Loading/Loading';
+import useTitle from '../../../hooks/useTitle';
 /* import card from '../../../assets/icons/credit-card 1.png'
 import pal from '../../../assets/icons/image 17.png'
 import Paypal from './Paypal/Paypal'; */
@@ -15,6 +16,8 @@ console.log(stripePromise);
 
 
 const Payment = () => {
+
+    useTitle('Payment')
     const booking = useLoaderData();
     const navigation = useNavigation();
     const {treatment,price,appointmentDate,slot} = booking;
@@ -46,7 +49,7 @@ const Payment = () => {
         <div>
             <h3 className="text-3xl ml-10 lg:ml-96 items-center text-amber-500 mt-5">Payment for {treatment}</h3>
             <p className="text-xl mt-10 text-center">Please pay <strong className='text-indigo-700'>${price}</strong> for your appointment on {appointmentDate} at {slot}</p>
-            <h2 className='mt-14 lg:ml-48 text-gray-500'>Pay with</h2>
+            {/* <h2 className='mt-14 lg:ml-48 text-gray-500'>Pay with</h2> */}
             
             {/* <div className='mt-5 lg:mx-56 grid grid-cols-1 lg:grid-cols-2'>
                 
