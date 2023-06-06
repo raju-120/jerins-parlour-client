@@ -135,7 +135,7 @@ const CheckOutForm = ({booking}) => {
 
             {
                 success && 
-                <div>
+                <div className='my-16'>
                     <p className='text-green-500'>{success}</p>
                     <p>Your transactionId: <span className='font-bold'>{transactionId}</span></p>
                 </div>
