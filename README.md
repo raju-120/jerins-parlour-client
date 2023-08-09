@@ -17,10 +17,10 @@
 ## Backend
 * Nodejs
 * ExpressJs
-* MongoDb (for data-base)
-* Json Web Token
+* MongoDB(for data-base)
+* JsonWebToken
 * Vercel
 
 ##payments
 
-* Stripes as a payment getway
+* Stripes as a payment gateway
